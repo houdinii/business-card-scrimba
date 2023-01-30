@@ -1,0 +1,87 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    
+    font-family: "Courier New", monospace;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* Bounce In */
+
+.avatar-bounce-in:hover, .avatar-bounce-in:focus, .avatar-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 100%
+}
+
+.avatar-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;    
+}
+
+.card {
+    width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #F7F7FF;
+    background-color: #5998C5;
+    border-bottom: 1px solid #88292F;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #88292F;
+    overflow: hidden;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.card-text h3,p,h4 {
+  animation: fly-in .75s ease-in-out;
+}
+
+@keyframes fly-in {
+  0%   {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
